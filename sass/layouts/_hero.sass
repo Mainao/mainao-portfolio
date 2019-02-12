@@ -2,6 +2,9 @@
 	height: 80vh
 	position: relative
 	overflow: hidden
+	@media(max-width: 425px)
+		height: 60vh
+
 
 .hero-content
 	position: relative
@@ -9,8 +12,7 @@
 	transform: translateY(-50%)
 	
 	p
-		font-family: $font-stack-m
-		font-weight: 500
+		font-weight: 700
 		color: $grey
 		text-transform: uppercase
 		letter-spacing: 2px
@@ -33,4 +35,5 @@
 			display: block
 	.hero-name
 		font-weight: $font-bold
-		border-bottom: 2px solid $brand
+		font-family: $font-stack-p
+		color: $brand

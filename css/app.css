@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,600");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700");
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet');
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -345,7 +346,8 @@ template {
 
 body {
   font-size: 1em;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
   color: #232323;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
@@ -357,11 +359,43 @@ body {
   padding-bottom: 1.5rem;
 }
 
-.main-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  left: 50%;
+  max-width: 1440px;
+  position: fixed;
+  -webkit-transform: translatex(-50%);
+  transform: translatex(-50%);
+  -webkit-transition: all 0.05s linear;
+  transition: all 0.05s linear;
+  width: 100%;
+  z-index: 2;
+}
+
+.main-nav {
+  padding: 20px 30px;
+}
+.main-nav li {
+  float: left;
+  list-style-type: none;
+  margin-right: 10px;
+}
+.main-nav a {
+  text-decoration: none;
+  display: inline-block;
+  color: #232323;
+}
+.main-nav a:hover {
+  color: #b544f6;
+}
+
+.brand {
+  font-family: "Great Vibes", sans-serif;
+  color: #b544f6;
+  padding: 0 30px;
 }
 
 @media (min-width: 725px) {
@@ -376,6 +410,11 @@ body {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 425px) {
+  .hero {
+    height: 60vh;
+  }
+}
 
 .hero-content {
   position: relative;
@@ -383,8 +422,7 @@ body {
   transform: translateY(-50%);
 }
 .hero-content p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   color: #939393;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -415,7 +453,8 @@ body {
 }
 .hero-header .hero-name {
   font-weight: 600;
-  border-bottom: 2px solid #b544f6;
+  font-family: "Playfair Display", sans-serif;
+  color: #b544f6;
 }
 
 .timeline {
@@ -485,10 +524,9 @@ body {
 }
 
 .date {
-  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #939393;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 @media (min-width: 725px) {
