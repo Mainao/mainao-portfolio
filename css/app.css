@@ -359,6 +359,10 @@ body {
   padding-bottom: 1.5rem;
 }
 
+h3 {
+  font-family: "Playfair Display", sans-serif;
+}
+
 header {
   background: #fff;
   display: flex;
