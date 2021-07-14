@@ -8,20 +8,104 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
 		<style>
 			body {
 				font-family: 'Fraunces', serif !important;
 			}
+
+			.brand-logo {
+				font-family: 'Zen loop', cursive;
+			}
 		</style>
 </head>
-<body class="bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100">
-	<div class="h-screen flex flex-col items-center justify-center py-16 ">
+<body class="bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 antialiased">
+	<nav class="border-gray-600 border-b-2 px-5">
+		<div class="container mx-auto flex justify-between items-center">
+			<div class="w-32 md:border-gray-700 md:border-r-2 py-5">
+				<a href="/" class="brand-logo text-4xl">M</a>
+			</div>
+			<a href="assets/mainao-resume.pdf" download class="uppercase underline">resume</a>
+		</div> 
+	</nav>
+	<div class="min-h-screen mx-auto flex flex-col items-center justify-center px-4">
 		
-		<h1 class="text-8xl font-thin">Hello I'm Mainao!</h1>
-		<p class="text-4xl font-thin italic mt-10">Welcome to my cozy space on the internet</p>
-		<!-- <p class="text-2xl mt-5">links</p> -->
-	
+		<h1 class="text-4xl md:text-7xl lg:text-8xl md:font-thin">Hello I'm Mainao!</h1>
+		<p class="text-2xl md:text-4xl font-thin italic mt-10">I am a Frontend Developer</p>
+		<p class="text-2xl md:text-4xl font-thin italic mt-10 text-center">Welcome to my cozy space on the internet</p>
+	  <a href="https://github.com/Mainao" class="mt-10">
+			<svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+		</a>
+
+	</div> 
+
+	<div class="py-16 flex flex-col gap-y-10 lg:flex-row">
+		<div class="lg:flex-1 flex flex-col items-center justify-center">
+			<div class="text-4xl md:text-5xl">My Experience</div>
+		</div>
+		<div class="lg:flex-1 flex flex-col gap-y-16">
+			<div class="flex flex-col items-center lg:items-start gap-y-1">
+				<p class="text-base font-thin">Jul 2019 - Mar 2021</p>
+				<p class="text-2xl">Byond Travel, Bangalore</p>
+				<p class="text-2xl italic text-center">Software Engineer (Frontend Development)</p>
+			</div>
+
+			<div class="flex flex-col gap-y-1 items-center lg:items-start">
+				<p class="text-base font-thin">Jul 2017 - Jul 2019</p>
+				<p class="text-2xl">Toolyt, Bangalore</p>
+				<p class="text-2xl italic">Associate UI Developer</p>
+			</div>
+
+			<div class="flex flex-col gap-y-1 items-center lg:items-start">
+				<p class="text-base font-thin">Jan 2017 - May 2017</p>
+				<p class="text-2xl">Zodiva, Bangalore</p>
+				<p class="text-2xl italic">Software Intern</p>
+			</div>
+		</div>
 	</div>
+
+	<div class="container mx-auto px-8 py-16">
+		<p class="text-4xl md:text-5xl text-center">Codewell Challenges</p>
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-10 mt-14 ">
+			<div class="group cursor-pointer bg-white px-4 pt-4 shadow-md rounded-md transition duration-500 ease-in-out transform hover:shadow-xl hover:-translate-y-1 hover:scale-110 ">
+				<a href="https://github.com/Mainao/codewell-gradie">
+					<img src="assets/gradie-thumbnail.jpeg" alt="Gradie sign up page" class="rounded-md">
+				</a>
+				<p class="text-lg text-center py-4 group-hover:text-blue-800">Gradie Sign Up Page</p>
+			</div>
+			<div class="group cursor-pointer bg-white px-4 pt-4 shadow-md rounded-md transition duration-500 ease-in-out transform hover:shadow-xl hover:-translate-y-1 hover:scale-110">
+				<a href="https://github.com/Mainao/codewell-fiber">
+					<img src="assets/fiber-thumbnail.jpeg" alt="Fiber landing page" class="rounded-md">
+				</a>
+				<p class="text-lg text-center py-4 group-hover:text-blue-800">Fiber Landing Page</p>
+			</div>
+			<div class="group cursor-pointer bg-white px-4 pt-4 shadow-md rounded-md rounded-md transition duration-500 ease-in-out transform hover:shadow-xl hover:-translate-y-1 hover:scale-110">
+				<img src="assets/comment-module-thumbnail.jpeg" alt="" class="rounded-md">
+				<p class="text-lg text-center py-4 group-hover:text-blue-800">Comment Module</p>
+			</div>
+			<div class="group cursor-pointer bg-white px-4 pt-4 shadow-md rounded-md rounded-md transition duration-500 ease-in-out transform hover:shadow-xl hover:-translate-y-1 hover:scale-110">
+				<a href="https://github.com/Mainao/codewell-timenow">
+					<img src="assets/timenow-thumbnail.png" alt="" class="rounded-md">
+				</a>
+				<p class="text-lg text-center py-4 group-hover:text-blue-800">TimeNow Landing Page</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container mx-auto px-8 py-16">
+		<p class="text-4xl md:text-5xl text-center">App Clones (React JS)</p>
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-10 mt-14">
+			<div class="group cursor-pointer bg-white px-4 pt-4 shadow-md rounded-md transition duration-500 ease-in-out transform hover:shadow-xl hover:-translate-y-1 hover:scale-110">
+				<a href="https://github.com/Mainao/disney-clone">
+					<img src="assets/disney-thumbnail.jpg" alt="" class="rounded-md">
+				</a>
+				<p class="text-lg text-center py-4 group-hover:text-blue-800">Disney+ Hotstar</p>
+			</div>
+		</div>
+	</div>
+
 </body>
 </html>
