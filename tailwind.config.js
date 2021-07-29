@@ -1,16 +1,10 @@
 module.exports = {
   purge: {
     enabled: true,
-    content: ["src/*.html"],
+    content: ["./*.html"],
   },
   darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {
-      colors: {
-        'daily-dev-tips': "#F89283"
-      }
-    },
-  },
+  theme: {},
   variants: {
     extend: {},
   },

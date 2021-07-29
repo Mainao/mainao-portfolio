@@ -1,12 +1,12 @@
 {
-  "name": "html-tailwind-starter",
+  "name": "mainao",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "postcss styles.css -o src/app.css",
-    "watch": "watch 'npm run build' ./src",
+    "build": "postcss styles.css -o css/app.css",
+    "watch": "watch 'npm run build' ./",
     "dev": "npm run build"
   },
   "keywords": [],
