@@ -1,64 +1,61 @@
 export default function Home() {
     return (
-        <div className="min-h-screen bg-white text-gray-900 font-sans">
-            <main className="max-w-5xl mx-auto px-4 py-12">
-                <header className="mb-12">
-                    <h1 className="text-4xl font-bold text-indigo-500">
-                        Mainao Baro
-                    </h1>
-                    <p className="text-lg text-gray-600">
-                        I am a Frontend Developer
-                    </p>
-                </header>
+        <main className="flex flex-col items-center justify-center min-h-screen bg-white text-neutral-900 font-mono px-6">
+            {/* Header */}
+            <header className="text-center mb-20">
+                <h1 className="text-3xl md:text-4xl font-bold">Mainao</h1>
+                <div className="flex">
+                    <h2 className="text-sm text-neutral-500 mt-2">
+                        Frontend Developer
+                    </h2>
+                    <img
+                        src="/icons/star.png"
+                        alt="Star icon"
+                        className="w-8 h-8"
+                    />
+                </div>
+            </header>
 
-                <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="border border-blue-300 rounded-xl p-6">
-                        <h2 className="text-xl font-semibold mb-2 text-indigo-500">
-                            Work Experience
-                        </h2>
-                        <ul className="list-disc list-inside text-gray-700">
-                            <li>CGI Information Systems (2023–Present)</li>
-                            <li>EPAM Systems(2021-2023)</li>
-                        </ul>
-                    </div>
-
-                    <div className="border border-blue-300 rounded-xl p-6">
-                        <h2 className="text-xl font-semibold mb-2 text-indigo-500">
-                            Projects
-                        </h2>
-                        <ul className="list-disc list-inside text-gray-700">
-                            <li>Test</li>
-                            <li>Test </li>
-                        </ul>
-                    </div>
-
-                    <div className="border border-blue-300 rounded-xl p-6">
-                        <h2 className="text-xl font-semibold mb-2 text-indigo-500">
-                            Resume
-                        </h2>
-                        <p className="text-gray-700">
-                            <a
-                                href="/resume.pdf"
-                                target="_blank"
-                                className="underline text-blue-600"
-                            >
-                                View My Resume
-                            </a>
+            {/* Icon Links */}
+            <div className="flex gap-10 md:gap-14">
+                {[
+                    { href: "/", icon: "about.png", label: "About" },
+                    {
+                        href: "/",
+                        icon: "project.png",
+                        label: "Projects",
+                    },
+                    { href: "/", icon: "skills.png", label: "Skills" },
+                    { href: "/", icon: "contact.png", label: "Contact" },
+                ].map(({ href, icon, label }) => (
+                    <a
+                        key={label}
+                        href={href}
+                        title={label}
+                        aria-label={label}
+                        className="flex flex-col items-center hover:scale-110 transition"
+                    >
+                        <img
+                            src={`/icons/${icon}`}
+                            alt={`${label} icon`}
+                            className="w-16 h-16 mb-1 object-contain"
+                        />
+                        <p className="text-sm text-neutral-700 text-center">
+                            {label}
                         </p>
-                    </div>
+                    </a>
+                ))}
+            </div>
 
-                    <div className="border border-blue-300 rounded-xl p-6">
-                        <h2 className="text-xl font-semibold mb-2 text-indigo-500">
-                            Contact
-                        </h2>
-                        <p className="text-gray-700">mainao1230@gmail.com</p>
-                    </div>
-                </section>
-
-                <footer className="mt-16 text-center text-gray-400">
-                    <p>Thank you for visiting!</p>
-                </footer>
-            </main>
-        </div>
+            {/* Footer */}
+            <footer className="flex items-center mt-20 text-xs text-neutral-400">
+                <p>© 2025 — made with </p>
+                <img
+                    src="/icons/heart.png"
+                    alt="Heart icon"
+                    className="w-4 h-4 ml-2"
+                />
+            </footer>
+        </main>
     );
 }
