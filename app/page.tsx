@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
     return (
         <main className="flex flex-col items-center justify-center min-h-screen bg-white text-neutral-900 font-mono px-6">
@@ -35,10 +37,12 @@ export default function Home() {
                         aria-label={label}
                         className="flex flex-col items-center hover:scale-110 transition"
                     >
-                        <img
+                        <Image
                             src={`/icons/${icon}`}
-                            alt={`${label} icon`}
+                            width={64}
+                            height={64}
                             className="w-16 h-16 mb-1 object-contain"
+                            alt={`${label} icon`}
                         />
                         <p className="text-sm text-neutral-700 text-center">
                             {label}
