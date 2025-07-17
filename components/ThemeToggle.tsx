@@ -23,12 +23,12 @@ export default function ThemeToggle() {
                     isDark ? "Switch to light mode" : "Switch to dark mode"
                 }
             >
-                <div className="relative w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7">
+                <div className="relative w-8 h-8">
                     <Image
                         src={isDark ? "/icons/sun.webp" : "/icons/moon.webp"}
                         alt="Toggle theme"
                         fill
-                        sizes="(max-width: 640px) 20px, (max-width: 768px) 24px, 28px"
+                        sizes="32px"
                         className="object-contain"
                         priority
                     />

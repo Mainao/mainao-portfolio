@@ -10,11 +10,11 @@ export default function Home() {
 
             {/* Header */}
             <header className="text-center mb-10 sm:mb-14 lg:mb-16">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-medium mb-2 sm:mb-3 text-neutral-900 dark:text-white tracking-wide">
+                <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-semibold mb-3 text-neutral-900 dark:text-white tracking-wider">
                     Mainao
                 </h1>
                 <div className="flex items-center justify-center gap-1 sm:gap-2">
-                    <h2 className="text-xs sm:text-sm md:text-base lg:text-lg text-neutral-600 dark:text-gray-300 tracking-tighter">
+                    <h2 className="text-sm sm:text-sm md:text-base lg:text-lg text-neutral-600 dark:text-gray-300 tracking-tighter sm:tracking-tight">
                         Frontend Developer
                     </h2>
                 </div>
@@ -24,11 +24,7 @@ export default function Home() {
             <div className="grid grid-cols-2 sm:flex gap-6 sm:gap-8 md:gap-10 lg:gap-12 mb-10 sm:mb-14 lg:mb-20">
                 {[
                     { href: "/", icon: "about.webp", label: "About" },
-                    {
-                        href: "/",
-                        icon: "project.webp",
-                        label: "Projects",
-                    },
+                    { href: "/", icon: "project.webp", label: "Projects" },
                     { href: "/", icon: "skills.webp", label: "Skills" },
                     { href: "/", icon: "contact.webp", label: "Contact" },
                 ].map(({ href, icon, label }) => (
@@ -39,17 +35,17 @@ export default function Home() {
                         aria-label={label}
                         className="flex flex-col items-center hover:scale-110 transition"
                     >
-                        <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mb-1">
+                        <div className="relative w-16 h-16 sm:w-14 sm:h-14 md:w-16 md:h-16 mb-1">
                             <Image
                                 src={`/icons/${icon}`}
                                 alt={`${label} icon`}
                                 fill
                                 priority
-                                sizes="(max-width: 640px) 48px, (max-width: 768px) 56px, 64px"
+                                sizes="(max-width: 640px) 64px, (max-width: 768px) 56px, 64px"
                                 className="object-contain"
                             />
                         </div>
-                        <p className="text-[10px] sm:text-xs md:text-sm lg:text-xs xl:text-sm text-neutral-700 dark:text-gray-300 group-hover:text-black dark:group-hover:text-white">
+                        <p className="text-sm sm:text-xs md:text-sm lg:text-xs xl:text-sm text-neutral-700 dark:text-gray-300 group-hover:text-black dark:group-hover:text-white">
                             {label}
                         </p>
                     </Link>
