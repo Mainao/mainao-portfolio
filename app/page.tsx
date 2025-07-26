@@ -23,7 +23,7 @@ export default function Home() {
             {/* Icon Links */}
             <div className="grid grid-cols-2 sm:flex gap-6 sm:gap-8 md:gap-10 lg:gap-12 mb-10 sm:mb-14 lg:mb-20">
                 {[
-                    { href: "/", icon: "about.webp", label: "About" },
+                    { href: "/about", icon: "about.webp", label: "About" },
                     { href: "/", icon: "project.webp", label: "Projects" },
                     { href: "/", icon: "skills.webp", label: "Skills" },
                     { href: "/", icon: "contact.webp", label: "Contact" },
