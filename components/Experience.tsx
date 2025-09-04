@@ -19,10 +19,10 @@ export default function Experience() {
                                 ({ company, period, role, flower }, i) => (
                                     <div
                                         key={i}
-                                        className="grid grid-cols-1 md:grid-cols-4 gap-8 items-start"
+                                        className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 gap-y-4 items-start"
                                     >
                                         {/* Flower */}
-                                        <div className="flex justify-center md:justify-start">
+                                        <div className="flex justify-center md:justify-start mb-4 md:mb-0">
                                             <Image
                                                 src={flower}
                                                 alt={`Flower for ${company}`}
@@ -35,9 +35,9 @@ export default function Experience() {
                                         {/* Details */}
                                         <div className="md:col-span-3">
                                             <article className="group relative flex flex-col items-start">
-                                                <div className="flex items-center gap-2 text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                                                <div className="flex flex-col md:flex-row md:items-center gap-2 text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
                                                     <span>{company}</span>
-                                                    <span className="text-sm font-normal text-zinc-600 dark:text-zinc-400">
+                                                    <span className="text-sm font-normal text-zinc-600 dark:text-zinc-400 md:ml-2">
                                                         — {role}
                                                     </span>
                                                 </div>
