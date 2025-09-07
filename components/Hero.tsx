@@ -5,7 +5,7 @@ export default function Hero() {
     return (
         <section
             id="hero"
-            className="fixed inset-0 flex flex-col items-center justify-center bg-white text-neutral-900 font-mono px-4 sm:px-6 lg:px-8 dark:bg-gray-900 dark:text-gray-100 z-0"
+            className="fixed inset-0 flex flex-col items-center justify-center bg-white dark:bg-zinc-900 text-neutral-900 dark:text-gray-100 font-mono px-4 sm:px-6 lg:px-8 z-0"
         >
             {/* Header */}
             <div className="text-center mb-6 sm:mb-8 hero-content opacity-0">

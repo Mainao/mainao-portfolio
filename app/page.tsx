@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ThemeToggle from "@/components/ThemeToggle";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,9 +48,9 @@ export default function Home() {
 
     return (
         <>
-            {/* <div className="fixed top-4 right-4 sm:right-6 lg:right-8 z-100">
+            <div className="fixed top-4 right-4 sm:right-6 lg:right-8 z-100">
                 <ThemeToggle />
-            </div> */}
+            </div>
 
             <Hero />
             <div className="h-screen" />
