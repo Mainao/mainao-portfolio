@@ -14,8 +14,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Mainao Portfolio",
-    description: "Portfolio of Mainao, a Frontend Developer",
+    title: "Mainao — Frontend Developer",
+    description: "Mainao's Portfolio",
+    icons: {
+        icon: "/icons/flower1.webp",
+    },
+    openGraph: {
+        title: "Mainao — Frontend Developer",
+        description: "Mainao’s portfolio",
+        url: "https://mainao.vercel.app",
+        siteName: "Mainao's Portfolio",
+        images: [
+            {
+                url: "/icons/flower1.webp",
+                width: 1200,
+                height: 630,
+                alt: "Mainao Portfolio Preview",
+            },
+        ],
+        locale: "en_US",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Mainao — Frontend Developer",
+        description: "Mainao’s Portfolio",
+        images: ["/icons/flower1.webp"],
+    },
 };
 
 export default function RootLayout({
