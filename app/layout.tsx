@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "Mainao — Frontend Developer",
     description: "Mainao's Portfolio",
     icons: {
-        icon: "/icons/flower1.webp",
+        icon: "/icons/favicon.ico",
     },
     openGraph: {
         title: "Mainao — Frontend Developer",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Mainao — Frontend Developer",
         description: "Mainao’s Portfolio",
-        images: ["/icons/flower1.webp"],
+        images: ["/icons/favicon.ico"],
     },
 };
 
