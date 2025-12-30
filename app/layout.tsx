@@ -14,16 +14,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+    metadataBase: new URL("https://mainao.vercel.app"),
+
     title: "Mainao — Frontend Developer",
     description: "Mainao's Portfolio",
-    icons: {
-        icon: "/icons/favicon.ico",
-    },
+
     openGraph: {
         title: "Mainao — Frontend Developer",
         description: "Mainao’s portfolio",
-        url: "https://mainao.vercel.app",
-        siteName: "Mainao's Portfolio",
         images: [
             {
                 url: "/icons/flower1.webp",
@@ -32,14 +30,11 @@ export const metadata: Metadata = {
                 alt: "Mainao Portfolio Preview",
             },
         ],
-        locale: "en_US",
-        type: "website",
     },
+
     twitter: {
         card: "summary_large_image",
-        title: "Mainao — Frontend Developer",
-        description: "Mainao’s Portfolio",
-        images: ["/icons/favicon.ico"],
+        images: ["/icons/flower1.webp"],
     },
 };
 
