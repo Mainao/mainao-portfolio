@@ -29,7 +29,11 @@ export default function Hero() {
                             alt={`Flower ${index + 1}`}
                             width={90}
                             height={90}
+                            sizes="90px"
+                            loading="lazy"
+                            decoding="async"
                             className="rounded-xl object-cover flower"
+                            aria-hidden="true"
                         />
                     </div>
                 ))}
